@@ -40,7 +40,7 @@ export default function RuleForm({ dispatch, lastOp }) {
   };
 
   return (
-    <form className="row g-2 align-items-end mb-4 p-2 border border-2 rounded-2" onSubmit={handleAdd} style={{border:'var(--bs-list-group-border-width) solid var(--bs-list-group-border-color)'}}>
+    <form className="row g-2 align-items-end mb-4 p-2 border border-2 rounded-2" onSubmit={handleAdd}>
       <div className="col-sm">
         <label className="form-label" htmlFor='type'>Type</label>
         <select
