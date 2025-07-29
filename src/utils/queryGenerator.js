@@ -1,7 +1,7 @@
 export function generateQueryJSON(rules) {
     const lines = [];
     let indent = 1;
-    const pad = level => '  '.repeat(level);
+    const pad = level => '  '.repeat(Math.abs(level));
     if (rules.length > 0)
         lines.push('{')
     rules.forEach(r => {
